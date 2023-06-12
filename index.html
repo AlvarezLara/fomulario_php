@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Formulario de registro SCIII</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="./validaciones.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="./formulario.php" onsubmit="return validarFormulario()">
+            <h2 class="title"><em>Formulario de Registro</em></h2>
+
+            <label class="required-label" for="nombre"> Nombre
+                <span class="required">(requerido)</span>
+            </label>
+            <input type="text" name="nombre" class="form-input" required />
+
+            <label class="required-label" for="apellido"> Apellido
+                <span class="required">(requerido)</span>
+            </label>
+            <input type="text" name="apellido" class="form-input" required />
+
+            <label class="required-label" for="email"> Email
+                <span class="required">(requerido)</span>
+            </label>
+            <input type="email" name="email" class="form-input" required />
+            <input class="submit-button" name="submit" type="submit" value="Subcribirse" />
+        </form>
+    </div>
+</body>
+
+</html>
